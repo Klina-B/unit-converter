@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+<body>
+    <h1>{{.Title}}</h1>
+
+    {{if .Message}}
+        <p>{{.Message}}</p>
+    {{end}}
+
+
+    <form method="POST" action="/">
+        <input type="text" name="name" placeholder="Введите имя">
+        <button type="submit">Отправить</button>
+    </form>
+
+</body>
+</html>
